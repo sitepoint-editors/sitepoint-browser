@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- loading animation :: Used as a splash screen-->
+    <!-- http://www.leemunroe.com/css3-animated-loading-bar/ -->
+    <link rel="stylesheet" href="public/libs/font-awesome/css/font-awesome.css">
+    <style type="text/css">
+        .loader {
+            height: 20px;
+            width: 200px;
+            padding: 10px;
+            margin: 200px auto 0;            
+        }
+        
+        .loader span {
+            height: 100%;
+            width: 100%;
+            font-size: 100px;
+        }
+        
+               
+        h1,
+        h3 {
+            text-align: center;
+            font-family: calibri;
+        }
+        
+        body {
+            background: #2F2E2E;
+            color: #ddd;
+        }
+    </style>
+    <script>
+        function init() {
+            require('./app.js');
+            setTimeout(function () {
+                window.location.assign('http://localhost:3000');
+            }, 2999);
+        }
+    </script>
+</head>
+
+<body onload="init()">
+    <h1>Sitepoint Browser</h1>
+    <div class="loader">
+        <span class="fa fa-spin fa-spinner"></span>
+    </div>
+    
+    <h3>Loading.. Please wait..</h3>
+</body>
+
+</html>

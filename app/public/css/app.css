@@ -1,0 +1,48 @@
+/*resets for angular ui bootstrap*/
+
+.nav,
+.pagination,
+.carousel,
+.panel-title a {
+    cursor: pointer;
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+html,
+.tab-content,
+.tab-pane,
+body > div {
+    height: 100%;
+}
+
+iframe {
+    background: white;
+}
+
+.controls {
+    position: fixed;
+    top: 10px;
+    right: 8px;
+}
+
+.controls > i {
+    padding: 0 3px;
+}
+
+.controls > i:last-child {
+    color: red;
+}
+
+.controls > i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.close-tab:hover {
+    color: red;
+    cursor: pointer;
+}

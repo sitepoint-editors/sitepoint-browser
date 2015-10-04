@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="browser">
+
+<head>
+    <title>
+        browser
+    </title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body ng-controller="main">   
+    <tabset>
+        <iframe-tab tabs="tabs">
+
+        </iframe-tab>
+    </tabset>
+    <div class="controls">
+        <i class="fa fa-plus" tooltip-placement="bottom" tooltip="New tab" ng-click="newTab()"></i>
+        <i class="fa fa-minus" ng-click="minimize()"></i>
+        <i class="fa fa-square-o" ng-click="toggleKioskMode()"></i>
+        <i class="fa fa-times" ng-click="close()"></i>
+    </div>
+
+
+
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/angular/angular.js"></script>
+    <script src="js/angular-sanitize.js"></script>
+    <script src="js/ui-bootstrap-tpls-0.13.4.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
