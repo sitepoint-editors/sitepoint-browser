@@ -15,7 +15,8 @@ angular.module('browser', ['ui.bootstrap', 'ngSanitize'])
             prompt("Please enter a url", "http://www.sitepoint.com").then(
                 function (url) {
                     var tab = {
-                        url: url
+                        url: url,
+                        active:true
                     }
                     $scope.tabs.push(tab);
                 },
@@ -39,17 +40,20 @@ angular.module('browser', ['ui.bootstrap', 'ngSanitize'])
             Window.close();
         };
     })
-    .directive('iframeTab', function () {
+    .directive('iframeTab', function ($timeout) {
         return {
             restrict: 'E',
             scope: {
                 tabs: '='
             },
             replace: true,
-            template: '<tab ng-repeat="tab in tabs">' +
+            template: '<tab class="tab" ng-repeat="tab in tabs" active="tab.active">' +
                 '<tab-heading>{{tab.url}} <i class="fa fa-times close-tab" ng-click="closeTab($index)"></i></tab-heading>' +
                 '<iframe src="{{trustSrc(tab.url)}}" style="width:100%; height:100%"></iframe>' +
-                '</tab>'
+                '</tab>',
+            link: function(scope, el, attrs){
+              
+            }
 
         };
     })
