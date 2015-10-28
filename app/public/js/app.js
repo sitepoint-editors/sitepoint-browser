@@ -49,10 +49,10 @@ angular.module('browser', ['ui.bootstrap', 'ngSanitize'])
             replace: true,
             template: '<tab class="tab" ng-repeat="tab in tabs" active="tab.active">' +
                 '<tab-heading>{{tab.url}} <i class="fa fa-times close-tab" ng-click="closeTab($index)"></i></tab-heading>' +
-                '<iframe src="{{trustSrc(tab.url)}}" style="width:100%; height:100%"></iframe>' +
+                '<iframe src="{{trustSrc(tab.url)}}" style="width:100%; height:100%" nwdisable nwfaketop></iframe>' +
                 '</tab>',
             link: function(scope, el, attrs){
-              
+          
             }
 
         };

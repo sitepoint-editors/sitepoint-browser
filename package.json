@@ -24,7 +24,7 @@
     "window": {
         "title": "Sitepoint Browser",
         "toolbar": false,
-        "frame": false,
+        "frame": true,
         "position": "center",
         "fullscreen": true,
         "resizable": true,
