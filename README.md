@@ -1,6 +1,6 @@
 ##Sitepoint browser
 
-Source for an article on SitePoint:
+Source for article: http://www.sitepoint.com/tabbed-browser-node-webkit-angularjs
 
 To run the app, execute:
 
