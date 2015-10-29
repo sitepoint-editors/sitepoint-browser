@@ -1,9 +1,9 @@
 {
-    "name": "Sitepoint",
+    "name": "test",
     "version": "0.0.1",
     "main": "./app/index.html",
-    "description": "Sitepoint browser",
-    "repository": "https://github.com/christiannwamba/sitepoint-browser",
+    "description": "No description yet",
+    "repository": "No repository yet",
     "license": "MIT",
     "node-remote": "localhost",
     "scripts": {

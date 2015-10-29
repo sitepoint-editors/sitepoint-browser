@@ -1,8 +1,10 @@
 {
-    "name": "browser",
-    "version": "0.0.0",
-    "dependencies": {
-        "bootstrap": "3.3.5",
-        "angular": "1.4.6"
-    }
+  "name": "browser",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap": "3.3.5",
+    "angular": "1.4.6",
+    "angular-bootstrap": "~0.14.3",
+    "angular-sanitize": "~1.4.7"
+  }
 }

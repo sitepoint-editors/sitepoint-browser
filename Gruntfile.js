@@ -48,19 +48,16 @@ module.exports = function (grunt) {
             if (platform === 'win') platforms.push('win')
             if (platform === 'mac') platforms.push('osx')
             if (platform === 'linux32') platforms.push('linux32')
-            if (platform === 'linux34') platforms.push('linux64')
+            if (platform === 'linux64') platforms.push('linux64')
 
             // Build for All platforms
             if (platform === 'all') platforms = ['win', 'osx', 'linux32', 'linux64']
-
         }
-
 
         if (platforms) {
             grunt.config('nwjs.options.platforms', platforms);
         }
 
         grunt.task.run(['nwjs']);
-
     });
 };
